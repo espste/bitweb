@@ -30,8 +30,8 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar src={icon} size="xlarge" />
-        <Typography.Title level={3} className="logo"><Link to="/">BitWeb</Link></Typography.Title>
+        <Avatar src={icon} size="large" />
+        <Typography.Title level={3} className="logo"><Link to="/"></Link></Typography.Title>
         <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
       {activeMenu && (

@@ -1,17 +1,17 @@
 import React from 'react';
-import millify from 'millify';
-import { Collapse, Row, Col, Typography, Avatar } from 'antd';
-import HTMLReactParser from 'html-react-parser';
+import millify from 'millify'; //eslint-disable-line
+import { Collapse, Row, Col, Typography, Avatar } from 'antd'; //eslint-disable-line
+import HTMLReactParser from 'html-react-parser'; //eslint-disable-line
 
 import { useGetExchangesQuery } from '../services/cryptoApi';
 import Loader from './Loader';
 
-const { Text } = Typography;
-const { Panel } = Collapse;
+const { Text } = Typography; //eslint-disable-line
+const { Panel } = Collapse; //eslint-disable-line
 
 const Exchanges = () => {
   const { data, isFetching } = useGetExchangesQuery();
-  const exchangesList = data?.data?.exchanges;
+  const exchangesList = data?.data?.exchanges; //eslint-disable-line
  
   if (isFetching) return <Loader />;
 
