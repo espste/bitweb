@@ -30,7 +30,7 @@ const App = () => {
           </Layout>
           <div className="footer">
             <Typography.Title level={5} style={{ color: "white", textAlign: 'center'}}>
-              BitWeb © All rights reserved
+              BitWeb © All rights reserved 
             </Typography.Title>
             <Space>
               <Link to="/">Home</Link>
